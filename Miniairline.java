@@ -60,6 +60,8 @@ do
 	case 1: displaySeat(nosseats, pname);
 	bookSeat(pname, getNumber(), getName());
 	break;
+	case 2: displaySeat(nosseats, pname);
+	break;
 	}
 	System.out.println("Booking Menu");
 	System.out.println("Select from the options below");
