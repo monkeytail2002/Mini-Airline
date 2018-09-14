@@ -32,6 +32,13 @@ public static void displaySeat(int noseats, String pname[])
 		System.out.println("Seat number: "+x+" Passenger name: "+pname[x]);
 }
 
+public static void cancelledSeat(String pname[], int cancelledseats)
+{
+	pname[cancelledseats] = null;
+	System.out.println("Seat booking cancelled");
+			
+}
+
 
 	public static void main(String[] args) 
 	{
@@ -62,6 +69,9 @@ do
 	break;
 	case 2: displaySeat(nosseats, pname);
 	break;
+	case 3: displaySeat(nosseats, pname); 
+		cancelledSeat(pname, getNumber());
+		break;
 	}
 	System.out.println("Booking Menu");
 	System.out.println("Select from the options below");
